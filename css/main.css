@@ -1,3 +1,8 @@
+@charset "UTF-8";
+:root {
+  --accencolor: #f66d73;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -48,7 +53,7 @@ body {
   padding: 0.3em 0;
   margin: 0.2em 0.3em;
   margin-bottom: 1.5em;
-  color: #f66d73;
+  color: var(--accencolor);
 }
 .top-navbar .search {
   margin-top: 2.5em;
@@ -58,13 +63,19 @@ body {
   padding-right: 0;
   border: 0;
 }
+.top-navbar .search input[placeholder] {
+  text-align: right;
+}
 .top-navbar .search button {
+  height: 3em;
+  width: 3em;
   margin-left: 0;
   padding-left: 0;
   border: 0;
-  background: #f66d73;
+  background: var(--accencolor);
   color: white;
   border-radius: 0.2em;
+  text-align: center;
 }
 
 ul {
@@ -73,4 +84,27 @@ ul {
 }
 ul a {
   text-decoration: none;
+}
+
+.section-navbar {
+  display: flex;
+  font-size: 0.7em;
+  border-top: solid 0.1em black;
+  border-bottom: solid 0.1em black;
+}
+.section-navbar ul {
+  margin: 0.2em auto;
+}
+.section-navbar ul.main-nav li + li::before {
+  color: black;
+  content: "|    ";
+}
+.section-navbar li, .section-navbar li a {
+  display: inline-block;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  margin: 0.1em;
+  color: black;
+}
+.section-navbar li i, .section-navbar li a i {
+  color: var(--accencolor);
 }/*# sourceMappingURL=main.css.map */
