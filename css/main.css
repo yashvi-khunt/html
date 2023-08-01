@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-align {
+  width: 60%;
+  margin: 0 auto;
+}
+.content-align img {
+  height: 70px;
+}
+
+.header {
+  background-color: #41383b;
+}
+.header .support-sec {
+  display: flex;
+  place-content: space-between;
+  color: rgba(226, 224, 224, 0.671);
+}
+.header .support-sec h4 {
+  display: inline;
+  font-size: 0.7em;
+  padding: 1em auto;
+}
+.header .support-sec span {
+  color: #9b4847;
+}
+
+.top-navbar {
+  display: flex;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 0.6em;
+  font-weight: 500;
+  place-content: space-between;
+}
+.top-navbar .top-nav {
+  margin: 0.1em auto;
+  padding: 0.1em auto;
+  text-align: center;
+}
+.top-navbar .top-nav h3 {
+  margin-top: 2em;
+  margin-bottom: 0.3em;
+}
+.top-navbar .top-nav li, .top-navbar .top-nav li a {
+  display: inline;
+  padding: 0.3em 0;
+  margin: 0.2em 0.3em;
+  margin-bottom: 1.5em;
+  color: #f66d73;
+}
+.top-navbar .search {
+  margin-top: 2.5em;
+}
+.top-navbar .search input {
+  margin-right: 0;
+  padding-right: 0;
+  border: 0;
+}
+.top-navbar .search button {
+  margin-left: 0;
+  padding-left: 0;
+  border: 0;
+  background: #f66d73;
+  color: white;
+  border-radius: 0.2em;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0 0;
+}
+ul a {
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */
