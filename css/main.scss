@@ -9,10 +9,8 @@ body{
 .content-align{
     width: 60%;
     margin: 0 auto;
+
     
-    img{
-        height: 70px;
-    }
 }
 
 .header{
@@ -42,6 +40,10 @@ body{
     font-weight: 500;
     place-content: space-between;
     // background: violet;
+
+    img{
+        height: 70px;
+    }
 
     .top-nav{
         // background: aqua;
@@ -86,7 +88,7 @@ body{
             border: 0;
             background: var(--accencolor);
             color: white;
-            border-radius: .2em;
+            border-radius: .3em;
             text-align: center;
         }
     }
@@ -94,7 +96,7 @@ body{
 
 ul{
     list-style-type: none;
-    padding: 0 0;
+    // padding: 0 0;
     a{
         text-decoration: none;
     }
@@ -108,7 +110,8 @@ ul{
     
     
     ul{
-        margin: .2em auto;
+        margin: .2em .1em;
+        padding-left: .7em;
     }
 
     ul.main-nav li+li::before{
@@ -129,3 +132,24 @@ ul{
     }
 }
 
+ul.top-nav li+li::before{
+    color: var(--accencolor);
+    content: "|\00a0\00a0\00a0\00a0";
+}
+
+
+// end of navbar
+.imgs-container{
+    
+    // background-color: aqua;
+
+    .main-img img{
+        // background: aquamarine;
+        width: 40em;
+
+    }
+
+    .side-imgs p{ 
+        // background: #9b4847;
+    }
+}
