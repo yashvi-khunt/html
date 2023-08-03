@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cottony</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/main.js"></script>
 </head>
+
 <body>
     <div class="header">
         <div class="support-sec content-align">
-            <h4 ><i class="fa fa-headphones"></i> SUPPORT +598639320</h4>
-            <h4 "><i class="fa fa-clipboard"></i>SHOPPING: Basket Subtotal: <span>$0.00</span></h4>
+            <h4><i class="fa fa-headphones"></i> SUPPORT +598639320</h4>
+            <h4 "><i class=" fa fa-clipboard"></i>SHOPPING: Basket Subtotal: <span>$0.00</span></h4>
         </div>
     </div>
 
     <div class="navbar content-align">
-            <div class="top-navbar">
+        <div class="top-navbar">
 
-                <a href="index.html">
-                    <img src="/images/logo.png" alt="Company-logo">
-                </a>
-        
-                <ul class="top-nav">
-                    <h3>WELCOME TO OUR ONLINE STORE</h3>
-                    <li><a href="#">MY ACCOUNT</a></li>
-                    <li><a href="#">MY WISHLIST</a></li>
-                    <li><a href="#">CHECKOUT</a></li>
-                    <li><a href="#">LOG IN</a></li>
-                </ul>
+            <a href="index.html">
+                <img src="/images/logo.png" alt="Company-logo">
+            </a>
 
-                <div class="search">
-                    <form action="#">
-                        <input type="text"
-                               placeholder=" Search shop here &nbsp;"
-                               name="search">
-                        <button>
-                            <i class="fa fa-search"
-                               style="font-size: 18px;">
-                            </i>
-                        </button>
-                    </form>
-                </div>
+            <ul class="top-nav">
+                <h3>WELCOME TO OUR ONLINE STORE</h3>
+                <li><a href="#">MY ACCOUNT</a></li>
+                <li><a href="#">MY WISHLIST</a></li>
+                <li><a href="#">CHECKOUT</a></li>
+                <li><a href="#">LOG IN</a></li>
+            </ul>
+
+            <div class="search">
+                <form action="#">
+                    <input type="text" placeholder=" Search shop here &nbsp;" name="search">
+                    <button>
+                        <i class="fa fa-search" style="font-size: 18px;">
+                        </i>
+                    </button>
+                </form>
             </div>
-            
-    
-            <section class="section-navbar">
-                <ul class="main-nav">
-                    <li><a href="#"><i class="fa fa-home"style="font-size: 18px;" ></i></a></li>
-                    <li><a href="#">BATH LINEN</a></li>
-                    <li><a href="#">BED LINEN</a></li>
-                    <li><a href="#">CURTAIN</a></li>
-                    <li><a href="#">TABLE LINEN</a></li>
-                    <li><a href="#">CUSHION</a></li>
-                    <li><a href="#">KITCHEN LINEN</a></li>
-                    <li><a href="#">WHOLESALE</a></li>
-                </ul>
-            </section>
+        </div>
+
+
+        <section class="section-navbar">
+            <ul class="main-nav">
+                <li><a href="#"><i class="fa fa-home" style="font-size: 18px;"></i></a></li>
+                <li><a href="#">BATH LINEN</a></li>
+                <li><a href="#">BED LINEN</a></li>
+                <li><a href="#">CURTAIN</a></li>
+                <li><a href="#">TABLE LINEN</a></li>
+                <li><a href="#">CUSHION</a></li>
+                <li><a href="#">KITCHEN LINEN</a></li>
+                <li><a href="#">WHOLESALE</a></li>
+            </ul>
+        </section>
     </div>
 
+
+    <!-- span should be changed to div and changes according to that should be applied.
+     Media query implementation remaining-->
     <div class="content content-align">
         <div class="imgs-container">
             <div class="main-img grid-item">
@@ -69,8 +72,8 @@
                     <img src="/images/stylish-look.png" alt="Stylish Look">
                     <span>
                         <label class="heading">STYLISH</label>
-                         <label class="heading">LOOK</label>
-                         <label>Lorem ipsum dolor sit amet</label> 
+                        <label class="heading">LOOK</label>
+                        <label>Lorem ipsum dolor sit amet</label>
                     </span>
                 </div>
 
@@ -79,7 +82,7 @@
                     <span>
                         <label class="heading">WOMEN</label>
                         <label class="heading"> TREND</label>
-                         <label>Lorem ipsum dolor sit amet</label> 
+                        <label>Lorem ipsum dolor sit amet</label>
                     </span>
                 </div>
 
@@ -88,65 +91,72 @@
                     <span>
                         <label class="heading">NEW </label>
                         <label class="heading">BRANDS</label>
-                        <label>Lorem ipsum dolor sit amet</label> 
+                        <label>Lorem ipsum dolor sit amet</label>
                     </span>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="corosoul">
-        <div class="card">
-            <img src="/images/stylish-look.png" alt="img1">
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur necessitatibus culpa natus illum quam porro similique fugit recusandae suscipit maiores nihil consectetur deserunt delectus </p>
-                <p>$34.99</p>
-            </div>
-        </div>
+    <div class="corosoul content-align">
+        <ul class="cards">
+            <li><i class="fa fa-arrow-left" id="arr-left" onclick="swipeLeft()"></i></diliv>
+            <li class="card" id="c1">
+                <img src="/images/stylish-look.png" alt="img1">
+                <div class="card-body">
+                    <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur
+                    </p>
+                    <p>$34.99</p>
+                </div>
+            </li>
 
-        <div class="card">
-            <img src="/images/women-trend.png" alt="img1">
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur necessitatibus culpa natus illum quam porro similique fugit recusandae suscipit maiores nihil consectetur deserunt delectus </p>
-                <p>$34.99</p>
-            </div>
-        </div>
+            <li class="card" id="c2">
+                <img src="/images/women-trend.png" alt="img1">
+                <div class="card-body">
+                    <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetura </p>
+                    <p>$34.99</p>
+                </div>
+            </li>
 
-        <div class="card">
-            <img src="/images/new-brands.png" alt="img1">
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur necessitatibus culpa natus illum quam porro similique fugit recusandae suscipit maiores nihil consectetur deserunt delectus </p>
-                <p>$34.99</p>
-            </div>
-        </div>
+            <li class="card" id="c3">
+                <img src="/images/new-brands.png" alt="img1">
+                <div class="card-body">
+                    <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur
+                    </p>
+                    <p>$34.99</p>
+                </div>
+            </li>
 
-        <div class="card">
-            <img src="/images/stylish-look.png" alt="img1">
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur necessitatibus culpa natus illum quam porro similique fugit recusandae suscipit maiores nihil consectetur deserunt delectus </p>
-                <p>$34.99</p>
-            </div>
-        </div>
+            <li class="card" id="c4">
+                <img src="/images/stylish-look.png" alt="img1">
+                <div class="card-body">
+                    <p>4. Lorem ipsum dolor adipisicing elit. A, facilis minima harum expedita tenetur necessitatibus culpa
+                        natus </p>
+                    <p>$34.99</p>
+                </div>
+            </li>
 
-        <div class="card">
-            <img src="/images/women-trend.png" alt="img1">
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur necessitatibus culpa natus illum quam porro similique fugit recusandae suscipit maiores nihil consectetur deserunt delectus </p>
-                <p>$34.99</p>
-            </div>
-        </div>
+            <li class="card" id="c5">
+                <img src="/images/women-trend.png" alt="img1">
+                <div class="card-body">
+                    <p>5. culpa natus illum quam porro similique fugit recusandae suscipit maiores nihil consectetur </p>
+                    <p>$34.99</p>
+                </div>
+            </li>
 
-        <div class="card">
-            <img src="/images/new-brands.png" alt="img1">
-            <div class="card-body">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur necessitatibus culpa natus illum quam porro similique fugit recusandae suscipit maiores nihil consectetur deserunt delectus </p>
-                <p>$34.99</p>
-            </div>
-        </div>
+            <li class="card" id="c6">
+                <img src="/images/new-brands.png" alt="img1">
+                <div class="card-body">
+                    <p>6. Lorem ipsum dolor sit amet consectetur adipisicing elit. illum quam porro similique fugit</p>
+                    <p>$34.99</p>
+                </div>
+            </li>
+            <li><i class="fa fa-arrow-right" id="arr-right" onclick="swipeRight()"></i></li>
+        </ul>
     </div>
 
 
-    <div class="fabric-types">
+    <div class="fabric-types content-align">
         <div class="fcard">
             <img src="#" alt="#">
             <div class="fcard-body">
@@ -202,11 +212,12 @@
                 <div style="display: flex;">
                     <div>$29.99</div>
                     <div><i class="fa fa-clipboard"></i></div>
-                    <div><i class="fa fa-shopping-basket"></i></div>
+                    <div><i class="fa fa-shopping-basket" ></i></div>
                 </div>
             </div>
         </div>
     </div>
 
 </body>
+
 </html>

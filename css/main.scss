@@ -210,3 +210,68 @@ ul.top-nav li+li::before{
         }
     }
 }
+
+
+.cards{
+    i.fa{
+        cursor: pointer;
+    }
+    // background-color: ;
+    padding: 0;
+    margin: 4em 0;
+    display: flex;
+    justify-content: space-between;
+   
+    // align-content: center;
+    // flex-basis: ;
+    #c1{
+        order:1;
+    }
+    #c2{
+        order:2;
+    }
+    #c3{
+        order:3;
+    }
+    #c4{
+        order:4;
+    }
+    #c5{
+        order:5;
+    }
+    #c6{
+        order:6;
+    }
+    
+    #c5,#c6{
+        display: none;
+    }
+
+    li:nth-child(1),li:nth-last-child(1){
+        align-self: center;
+    }
+    .card{
+        // border: 1px solid black;
+        height: 22rem;
+        width: 12rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: flex-start;
+        // flex-wrap: wrap;
+
+        img{
+            width: 100%;
+            align-self: center;
+        }
+
+        div{
+            text-transform: uppercase;
+            text-align: start;
+            p:nth-child(2){
+                color: var(--accencolor);
+            }
+        }
+    }
+}   

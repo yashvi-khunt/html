@@ -163,4 +163,58 @@ ul.top-nav li + li::before {
   font-size: 1.2em;
   color: white;
   font-weight: 100;
+}
+
+.cards {
+  padding: 0;
+  margin: 4em 0;
+  display: flex;
+  justify-content: space-between;
+}
+.cards i.fa {
+  cursor: pointer;
+}
+.cards #c1 {
+  order: 1;
+}
+.cards #c2 {
+  order: 2;
+}
+.cards #c3 {
+  order: 3;
+}
+.cards #c4 {
+  order: 4;
+}
+.cards #c5 {
+  order: 5;
+}
+.cards #c6 {
+  order: 6;
+}
+.cards #c5, .cards #c6 {
+  display: none;
+}
+.cards li:nth-child(1), .cards li:nth-last-child(1) {
+  align-self: center;
+}
+.cards .card {
+  height: 22rem;
+  width: 12rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.cards .card img {
+  width: 100%;
+  align-self: center;
+}
+.cards .card div {
+  text-transform: uppercase;
+  text-align: start;
+}
+.cards .card div p:nth-child(2) {
+  color: var(--accencolor);
 }/*# sourceMappingURL=main.css.map */
