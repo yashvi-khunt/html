@@ -1,34 +1,34 @@
-// function swipeLeft(){
-//     cards = document.getElementsByClassName("card");
-//     count = 1;
-//     for(card of cards){
-//         console.log(card.id)
-//         display = window.getComputedStyle(card).display
+ function swipeLeft(){
+    cards = document.getElementsByClassName("card");
+    // count = 1;
+    for(card of cards){
+        console.log(card.id)
+        display = window.getComputedStyle(card).display
         
 
-//         // if(display != "none"){
-//         //     card.style.display = "none";
-//         // }
-//         // else{
-//         //     card.style.display = "flex";
-//         // }
+        if(display != "none"){
+            card.style.display = "none";
+        }
+        else{
+            card.style.display = "flex";
+        }
 
-//         if(display != "none"){
-//             if(count == 1) {
-//                 card.style.display = "none";
-//                 count = 0;
-//             }
-//         }
-//         else{
-//             if(count==0){
-//                 card.style.display = "flex";
-//                 count = 1;
-//             }   
-//         }
-//         display = window.getComputedStyle(card).display
-//         console.log(display)
-//     }
-// }
+        /*if(display != "none"){
+            if(count == 1) {
+                card.style.display = "none";
+                count = 0;
+            }
+        }
+        else{
+            if(count==0){
+                card.style.display = "flex";
+                count = 1;
+            }   
+        }
+        display = window.getComputedStyle(card).display
+        console.log(display)*/
+    }
+}
 
 /*function swipeLeft(){
     let cards = document.getElementsByClassName("card")
@@ -57,7 +57,7 @@ function swipeRight(){
     document.getElementById(cards[5].id).id = firstId
 }*/
 
-function swipeLeft(){
+/*function swipeLeft(){
     count = 1;
     let cards = document.getElementsByClassName("card")
     let hiddenCards = document.getElementsByClassName("hidden-card")
@@ -69,8 +69,21 @@ function swipeLeft(){
     // console.
     console.log(cards)
     console.log(hiddenCards)
-}
+}*/
 
 function swipeRight(){
-    
+    cards = document.getElementsByClassName("card");
+    // count = 1;
+    for(card of cards){
+        console.log(card.id)
+        display = window.getComputedStyle(card).display
+        
+
+        if(display != "none"){
+            card.style.display = "none";
+        }
+        else{
+            card.style.display = "flex";
+        }
+    }
 }
