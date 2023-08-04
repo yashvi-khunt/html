@@ -30,7 +30,7 @@
 //     }
 // }
 
-function swipeLeft(){
+/*function swipeLeft(){
     let cards = document.getElementsByClassName("card")
    let lastId = cards[cards.length-1].id;
     // console.log(firstid)
@@ -55,4 +55,22 @@ function swipeRight(){
         console.log(document.getElementById(cards[j].id).id)
     }
     document.getElementById(cards[5].id).id = firstId
+}*/
+
+function swipeLeft(){
+    count = 1;
+    let cards = document.getElementsByClassName("card")
+    let hiddenCards = document.getElementsByClassName("hidden-card")
+    console.log(cards)
+    console.log(hiddenCards)
+
+    hiddenCards[0].classList.remove("hidden-card")
+    cards[0].classList.add("hidden-card")
+    // console.
+    console.log(cards)
+    console.log(hiddenCards)
+}
+
+function swipeRight(){
+    
 }
