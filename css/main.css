@@ -48,7 +48,8 @@ body {
   margin-top: 2em;
   margin-bottom: 0.3em;
 }
-.top-navbar .top-nav li, .top-navbar .top-nav li a {
+.top-navbar .top-nav li,
+.top-navbar .top-nav li a {
   display: inline;
   padding: 0.3em 0;
   margin: 0.2em 0.3em;
@@ -102,13 +103,15 @@ ul a {
   color: black;
   content: "|    ";
 }
-.section-navbar li, .section-navbar li a {
+.section-navbar li,
+.section-navbar li a {
   display: inline-block;
   padding: 0.3em 0.3em 0.3em 0.3em;
   margin: 0.1em;
   color: black;
 }
-.section-navbar li i, .section-navbar li a i {
+.section-navbar li i,
+.section-navbar li a i {
   color: var(--accencolor);
 }
 
@@ -177,7 +180,8 @@ ul.top-nav li + li::before {
 .cards i.fa {
   cursor: pointer;
 }
-.cards li:nth-child(1), .cards li:nth-last-child(1) {
+.cards li:nth-child(1),
+.cards li:nth-last-child(1) {
   align-self: center;
 }
 .cards .card {
@@ -237,9 +241,32 @@ ul.top-nav li + li::before {
        column-gap: 0.1em;
 }
 
+.footer .newsletter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer .newsletter .first-part {
+  background: var(--accencolor);
+  display: flex;
+  justify-content: flex-start;
+}
+.footer .newsletter .first-part * {
+  padding: 0 0.6em;
+  color: white;
+}
+.footer .newsletter .second-part {
+  display: flex;
+  background: lightgray;
+  text-align: center;
+}
+.footer .newsletter .second-part .triangle {
+  border-top: 28px solid transparent;
+  border-bottom: 28px solid transparent;
+  border-left: 28px var(--accencolor) solid;
+  margin-right: 5em;
+}
 .footer .info {
   margin-top: 5em;
-  border-top: 1px solid var(--accencolor);
   display: flex;
   gap: 5em;
   align-content: flex-start;
@@ -286,7 +313,8 @@ ul.top-nav li + li::before {
   .top-navbar .search form .menu {
     display: inline;
   }
-  .section-navbar, .top-nav {
+  .section-navbar,
+.top-nav {
     display: none;
   }
   .fabric-types {
