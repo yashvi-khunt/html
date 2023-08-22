@@ -80,3 +80,19 @@ function swipeRight() {
     }
   }*/
 }
+
+function swipeLeft() {
+  count++;
+  console.log(gap + count);
+  const card1 = document.getElementById(`c${count}`);
+  console.log(card1);
+  const card2 = document.getElementById(
+    `c${(gap + count) % 6 == 0 ? 6 : (gap + count) % 6}`
+  );
+  console.log(card2);
+
+  card1.classList.add("hidden-card");
+  card2.classList.remove("hidden-card");
+
+  if (count == 6) count = 0;
+}

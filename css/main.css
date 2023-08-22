@@ -179,6 +179,10 @@ ul.top-nav li + li::before {
 .cards i.fa {
   cursor: pointer;
 }
+.cards li:nth-child(1),
+.cards li:nth-last-child(1) {
+  align-self: center;
+}
 .cards .card {
   height: 22rem;
   width: 12rem;
@@ -309,7 +313,7 @@ ul.top-nav li + li::before {
     display: inline;
   }
   .section-navbar,
-.top-nav {
+  .top-nav {
     display: none;
   }
   .fabric-types {
