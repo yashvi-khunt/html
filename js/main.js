@@ -1,89 +1,82 @@
- function swipeLeft(){
-    cards = document.getElementsByClassName("card");
-    // count = 1;
-    for(card of cards){
-        console.log(card.id)
-        display = window.getComputedStyle(card).display
-        
+let count = 0;
+const gap = 4;
 
-        if(display != "none"){
-            card.style.display = "none";
-        }
-        else{
-            card.style.display = "flex";
-        }
+/*const cards = {
+  card1: {
+    image: "img-1",
+    description:
+      "1. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur",
+  },
+  card2: {
+    image: "img-2",
+    description:
+      "2. Explicabo quisquam atque molestiae consequuntur voluptas! Dolorem, voluptatibus aperiam",
+  },
+  card2: {
+    image: "img-3",
+    description:
+      "3. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur",
+  },
+  card4: {
+    image: "img-4",
+    description:
+      "4. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur",
+  },
+  card5: {
+    image: "img-5",
+    description:
+      "5. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur",
+  },
+  card6: {
+    image: "img-6",
+    description:
+      "6. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita tenetur",
+  },
+};
 
-        /*if(display != "none"){
-            if(count == 1) {
-                card.style.display = "none";
-                count = 0;
-            }
-        }
-        else{
-            if(count==0){
-                card.style.display = "flex";
-                count = 1;
-            }   
-        }
-        display = window.getComputedStyle(card).display
-        console.log(display)*/
-    }
-}
+const displayCards = function () {
+  const listElement = document.getElementById("cards-list");
+  console.log(listElement);
+  const l1 = `<li class="card">
+                <img src="./images/img-`;
+  const l2 = `.png" alt="img1">
+                <div class="card-body">
+                  <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. A, facilis minima harum expedita
+                        tenetur
+                  </p>
+                  <p>$34.99</p>
+                </div>`;
+  // for(let i=1;i<5;i++){
 
-/*function swipeLeft(){
-    let cards = document.getElementsByClassName("card")
-   let lastId = cards[cards.length-1].id;
-    // console.log(firstid)
-    for(i=cards.length-1; i>0; i--){
-       let newId = cards[i-1].id;
-        console.log( i +" "+newId)
-        document.getElementById(cards[i].id).id = newId
-        console.log(document.getElementById(cards[i].id).id)
-    }
-    document.getElementById(cards[0].id).id = lastId
-
-}
-
-function swipeRight(){
-    let cards = document.getElementsByClassName("card")
-    let firstId = cards[0].id;
-
-    for(j=0;j<cards.length-1;j++){
-        let newId = cards[j+1].id;
-        console.log( j +" "+newId)
-        document.getElementById(cards[j].id).id = newId
-        console.log(document.getElementById(cards[j].id).id)
-    }
-    document.getElementById(cards[5].id).id = firstId
+  // }
+};
+function swipeLeft() {
+  count++;
+  console.log(count);
+  cardI = document.getElementById(`c${count}`);
+  console.log(cardI);
+  console.log(gap + count);
+  cardII = document.getElementById(
+    `c${(gap + count) % 6 !== 0 ? (gap + count) % 6 : 6}`
+  );
+  console.log(cardII);
+  cardI.classList.toggle("hidden-card");
+  cardII.classList.toggle("hidden-card");
+  // cardII.style.order = 10;
+  if (count === 6) count = 0;
 }*/
 
-/*function swipeLeft(){
-    count = 1;
-    let cards = document.getElementsByClassName("card")
-    let hiddenCards = document.getElementsByClassName("hidden-card")
-    console.log(cards)
-    console.log(hiddenCards)
+function swipeRight() {
+  // count = 1;
+  /*cards = document.getElementsByClassName("card");
+  for (card of cards) {
+    console.log(card.id);
+    display = window.getComputedStyle(card).display;
 
-    hiddenCards[0].classList.remove("hidden-card")
-    cards[0].classList.add("hidden-card")
-    // console.
-    console.log(cards)
-    console.log(hiddenCards)
-}*/
-
-function swipeRight(){
-    cards = document.getElementsByClassName("card");
-    // count = 1;
-    for(card of cards){
-        console.log(card.id)
-        display = window.getComputedStyle(card).display
-        
-
-        if(display != "none"){
-            card.style.display = "none";
-        }
-        else{
-            card.style.display = "flex";
-        }
+    if (display != "none") {
+      card.style.display = "none";
+    } else {
+      card.style.display = "flex";
     }
+  }*/
 }
